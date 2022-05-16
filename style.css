@@ -2,21 +2,30 @@ body {
   margin: 0;
   font-family: 'Arsenal', sans-serif;
   font-size: 10px;
+  background-color: #050801;
+}
+
+.gradient {
   background-image: linear-gradient(to top, #050801, #3b3f3e, #767a7b, #b9babb, #ffffff);
+  padding-bottom: 250px;
 }
 
 .header {
   width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+.Otso-chodzi {
+  box-shadow: inset 0 0 2em 0 rgb(3, 252, 211), 0 0 2em 0 rgb(3, 252, 211);
+  -webkit-box-reflect: below 1.5em linear-gradient(transparent, rgba(3, 252, 211,0.1));
 }
 
 .secret {
   font-size: 50px;
-  display: flex;
-  align-self: flex-end;
 }
 a {
   text-decoration: none;
@@ -236,13 +245,66 @@ a {
 .Aktualności {
   text-align: center;
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   color: white;
 }
 
+.contener {
+  font-size: 2em;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.contener_top {
+  color: rgba(3, 252, 211, 1);
+  text-shadow: 0 0 0.5em rgb(255, 255, 255), 0 0 0.5em rgb(255, 255, 255);
+  cursor: pointer;
+  border-left: solid  2px rgba(3, 252, 211, 1);
+}
+
+.contener_top:active {
+  text-shadow: none;
+}
+
+.contener_tresc {
+  font-size: 15px;
+  padding: 20px 100px;
+}
+
+.contener_tresc a {
+  color: rgba(3, 252, 211, 1);
+}
+
+.contener_tresc img {
+  float: right;
+  width: 20%;
+  box-shadow: inset 0 0 2em 0 rgb(3, 252, 211), 0 0 2em 0 rgb(3, 252, 211);
+}
+
+.contener_tresc b, br {
+  line-height: 7;
+}
+
 .Footer {
   width: 100%;
   height: 50vh;
+  color: white;
+}
+
+.menu img {
+  float: left;
+  width: 15em;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 3px;
+  box-shadow: inset 0 0 5em 0 rgba(255, 255, 255, .7), 0 0 5em 0 rgba(255, 255, 255, .7);
+}
+
+.menu {
+  padding-top: 150px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }

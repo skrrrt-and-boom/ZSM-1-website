@@ -19,9 +19,13 @@ mainLogo[0].addEventListener("click", () => {
 
 //  add Aktualności
 function addAktualności() {
+  const cont = document.getElementsByClassName("contener");
+  const akt = document.getElementsByClassName("Aktualności");
   let addAktualności = document.querySelectorAll(".contener_top");
-  for ( i of addAktualności) {
-    i.removeAttribute("hidden");
+  for (let i = 0; i < cont.length; i++) {
+    addAktualności[i].removeAttribute("hidden");
+    akt[0].removeAttribute("hidden");
+    cont[i].removeAttribute("hidden");
   }
 }
 
@@ -50,6 +54,7 @@ showAktualności();
 function appendFooter() {
   const addFooter = document.createElement("div");
   addFooter.classList.add("Footer");
+  addFooter.innerHTML = '<div class="menu"><img src="Pictures/logo.png"><div>Zespół Szkół Mechanicznych Nr 1 im. Szczepana Humberta w Krakowie<br> al. Mickiewicza 5, 31-120 Kraków<br>tel. &nbsp;(12) 422-68-04<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(12) 422-64-43<br> fax. (12) 634-30-46 <br><br> e-mail: zsm1krakow@iap.pl<br> http://www.zsm1krakow.pl</div></div>';
   return body.appendChild(addFooter);
 }
 
