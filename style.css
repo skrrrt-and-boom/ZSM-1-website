@@ -69,7 +69,7 @@ a {
               0 0 200px rgb(3, 252, 211);
 }
 
-.main-logo:active {
+.main-logo:activee {
   padding: 7px;
   font-size: 100px;
   font-weight: bold;
@@ -227,6 +227,10 @@ a {
   opacity: 1;
 }
 
+.Galery:active,.Menu:active,.Professions:active {
+  transform: scale(0.9, 0.9);
+}
+
 .logo {
   width: 5%;
   height: 100%;
@@ -240,6 +244,10 @@ a {
   background: rgba(255, 255, 255,0.3);
   border-radius: 0.25em;
   box-shadow: inset 0 0 1em 0 rgb(255, 255, 255), 0 0 0.5em 0 rgb(255, 255, 255);
+}
+
+.logo:active {
+  transform: scale(1.9, 1.9);
 }
 
 .Aktualności {
@@ -261,6 +269,15 @@ a {
   text-shadow: 0 0 0.5em rgb(255, 255, 255), 0 0 0.5em rgb(255, 255, 255);
   cursor: pointer;
   border-left: solid  2px rgba(3, 252, 211, 1);
+  border-right: solid  2px rgba(3, 252, 211, 0);
+  border-top: solid  1px rgba(3, 252, 211, 1);
+  border-bottom: solid  100% rgba(3, 252, 211, 0);
+  padding: 10px;
+}
+
+.contener_top:hover {
+  border-right: solid  2px rgba(3, 252, 211, 1);
+  border-bottom: solid  1px rgba(3, 252, 211, 1);
 }
 
 .contener_top:active {
@@ -307,4 +324,47 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+br {
+  display: flow-root;
+}
+
+/*   Inne Menu - to normalne   */
+
+.menu-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25vh;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: inset 0 0 1em 0 rgb(3, 252, 211);
+  border-bottom: solid 2px rgb(3, 252, 211);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* epic animation */
+
+.uczniowie, .rodzice, .zawody, .rekrutacja, .projekty, .współpraca {
+  text-align: center;
+  padding: 30px;
+  font-size: 2em;
+  display: block;
+  background: linear-gradient(to right, rgb(3, 252, 211) 50%, rgba(0, 0, 0, 0.1)50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+}
+
+.uczniowie:hover, .rodzice:hover, .zawody:hover, .rekrutacja:hover, .projekty:hover, .współpraca:hover {
+  background-position: left bottom;
+  color: black;
+}
+
+.uczniowie:active, .rodzice:active, .zawody:active, .rekrutacja:active, .projekty:active, .współpraca:active {
+  box-shadow: inset 0 0 4em 0 rgba(0, 0, 0, 0.7);
+  font-size: 1.5em;
 }

@@ -54,7 +54,7 @@ showAktualności();
 function appendFooter() {
   const addFooter = document.createElement("div");
   addFooter.classList.add("Footer");
-  addFooter.innerHTML = '<div class="menu"><img src="Pictures/logo.png"><div>Zespół Szkół Mechanicznych Nr 1 im. Szczepana Humberta w Krakowie<br> al. Mickiewicza 5, 31-120 Kraków<br>tel. &nbsp;(12) 422-68-04<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(12) 422-64-43<br> fax. (12) 634-30-46 <br><br> e-mail: zsm1krakow@iap.pl<br> http://www.zsm1krakow.pl</div></div>';
+  addFooter.innerHTML = '<div class="menu"><img src="Pictures/logo.png"><div>Zespół Szkół Mechanicznych Nr 1 im. Szczepana Humberta w Krakowie<br> al. Mickiewicza 5, 31-120 Kraków<br>tel. &nbsp;(12) 422-68-04<br> &nbsp;(12) 422-64-43<br> fax. (12) 634-30-46 <br><br> e-mail: zsm1krakow@iap.pl<br> http://www.zsm1krakow.pl</div></div>';
   return body.appendChild(addFooter);
 }
 
@@ -69,3 +69,27 @@ const face = document.querySelector("a");
 face.addEventListener("click", () => {
   face.textContent = "@_@";
 });
+
+//  menu  activate
+function menuActive() {
+  const menu = document.getElementsByClassName("Menu");
+  menu[0].addEventListener("click", () => {
+    const esence = document.createElement("div");
+    esence.classList.add("menu-content");
+    esence.innerHTML = '<div class="uczniowie">Informacje dla uczniów</div><div class="rodzice">Informacje dla rodziców</div><div class="zawody">Zawody realizowane na terenie szkoły</div><div class="rekrutacja">rekrutacja</div><div class="projekty">Projekty</div><div class="współpraca">Współpraca międzynarodowa</div>';
+    body.appendChild(esence);
+    menuDiactivate();
+  });
+}
+
+menuActive();
+
+//  menu  diactivate
+function menuDiactivate() {
+  let afterMenu = document.querySelector(".menu-content");
+    window.addEventListener("scroll", () => {
+      if (body.contains(afterMenu)) {
+        body.removeChild(afterMenu);
+      }
+  });
+}
