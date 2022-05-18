@@ -65,9 +65,9 @@ styleElement.textContent = "html::-webkit-scrollbar{display:none !important}" + 
 body.appendChild(styleElement);
 
 //  awsome style
-const face = document.querySelector("a");
-face.addEventListener("click", () => {
-  face.textContent = "@_@";
+const face = document.getElementsByClassName("secret");
+face[0].addEventListener("click", () => {
+  face[0].textContent = "@_@";
 });
 
 //  menu  activate
@@ -92,4 +92,54 @@ function menuDiactivate() {
         body.removeChild(afterMenu);
       }
   });
+}
+
+//  Galery add
+
+function addGalery() {
+  const galButton = document.getElementsByClassName("Galery");
+  galButton[0].addEventListener("click", () => {
+    const slideshow = document.getElementsByClassName("slideshow");
+    const prev = document.createElement("a");
+    prev.classList.add("prev");
+    prev.onclick = function() {plusSlides(-1);};
+    console.log(prev.onclick);
+    prev.textContent = "❮";
+    slideshow[0].appendChild(prev);
+    const next = document.createElement("a");
+    next.classList.add("next");
+    next.onclick = function() {plusSlides(1);};
+    next.textContent = "❯";
+    slideshow[0].appendChild(next);
+  });
+}
+
+addGalery();
+//  how galery works
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
 }
