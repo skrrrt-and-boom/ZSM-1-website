@@ -76,7 +76,7 @@ function menuActive() {
   menu[0].addEventListener("click", () => {
     const esence = document.createElement("div");
     esence.classList.add("menu-content");
-    esence.innerHTML = '<div class="uczniowie">Informacje dla uczniów</div><div class="rodzice">Informacje dla rodziców</div><div class="zawody">Zawody realizowane na terenie szkoły</div><div class="rekrutacja">rekrutacja</div><div class="projekty">Projekty</div><div class="współpraca">Współpraca międzynarodowa</div>';
+    esence.innerHTML = '<div class="uczniowie">Informacje dla uczniów</div><div class="rodzice">Informacje dla rodziców</div><a href="zawody.html" class="zawody"><div class="zawody-div">Zawody realizowane na terenie szkoły</div></a><div class="rekrutacja">rekrutacja</div><div class="projekty">Projekty</div><div class="współpraca">Współpraca międzynarodowa</div>';
     body.appendChild(esence);
     menuDiactivate();
   });
@@ -108,7 +108,7 @@ function addGalery() {
     slideshow[0].appendChild(prev);
     const next = document.createElement("a");
     next.classList.add("next");
-    next.onclick = function() {plusSlides(1);};
+    next.onclick = function() {plusSlides(1)};
     next.textContent = "❯";
     slideshow[0].appendChild(next);
   });

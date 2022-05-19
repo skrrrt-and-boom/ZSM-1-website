@@ -70,7 +70,7 @@ body {
               0 0 200px rgb(3, 252, 211);
 }
 
-.main-logo:activee {
+.main-logo:active {
   padding: 7px;
   font-size: 100px;
   font-weight: bold;
@@ -452,4 +452,9 @@ img {
 }
 @media only screen and (max-width: 300px) {
   .prev, .next, {font-size: 11px}
+}
+
+.zawody {
+  text-decoration: none;
+  color: white;
 }
