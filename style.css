@@ -454,7 +454,7 @@ img {
   .prev, .next, {font-size: 11px}
 }
 
-.zawody {
+.zawody, .rekrutacja, .uczniowie, .rodzice, .projekty, .współpraca{
   text-decoration: none;
   color: white;
 }

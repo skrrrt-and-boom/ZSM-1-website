@@ -1,0 +1,11 @@
+Model Information:
+* title:	Industrial Robot
+* source:	https://sketchfab.com/3d-models/industrial-robot-74017754d6d443a1bc258da98b08e6fc
+* author:	Arkady Gribachev (https://sketchfab.com/prephonat)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Industrial Robot" (https://sketchfab.com/3d-models/industrial-robot-74017754d6d443a1bc258da98b08e6fc) by Arkady Gribachev (https://sketchfab.com/prephonat) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

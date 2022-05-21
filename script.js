@@ -61,7 +61,7 @@ function appendFooter() {
 //  delate scrollbar
 const styleElement = document.createElement("style");
 styleElement.id = "remove-scroll";
-styleElement.textContent = "html::-webkit-scrollbar{display:none !important}" + "body::-webkit-scrollbar{display:none !important}";
+styleElement.textContent = "html::-webkit-scrollbar{display:none}" + "body::-webkit-scrollbar{display:none}";
 body.appendChild(styleElement);
 
 //  awsome style
@@ -76,7 +76,7 @@ function menuActive() {
   menu[0].addEventListener("click", () => {
     const esence = document.createElement("div");
     esence.classList.add("menu-content");
-    esence.innerHTML = '<div class="uczniowie">Informacje dla uczniów</div><div class="rodzice">Informacje dla rodziców</div><a href="zawody.html" class="zawody"><div class="zawody-div">Zawody realizowane na terenie szkoły</div></a><div class="rekrutacja">rekrutacja</div><div class="projekty">Projekty</div><div class="współpraca">Współpraca międzynarodowa</div>';
+    esence.innerHTML = '<a href="uczniowie.html" class="uczniowie"><div class="uczniowie-div">Informacje dla uczniów</div></a><a href="rodzice.html" class="rodzice"><div class="rodzice-div">Informacje dla rodziców</div></a><a href="zawody.html" class="zawody"><div class="zawody-div">Zawody realizowane na terenie szkoły</div></a><a href="rekrutacja.html" class="rekrutacja"><div class="rekrutacja-div">rekrutacja</div></a><a href="projekty.html" class="projekty"><div class="projekty-div">Projekty</div></a><a href="współpraca.html" class="współpraca"><div class="współpraca-div">Współpraca międzynarodowa</div></a>';
     body.appendChild(esence);
     menuDiactivate();
   });

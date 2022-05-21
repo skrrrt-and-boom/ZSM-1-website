@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>rekrutacja</title>
+  </head>
+  <style type="text/css">
+    body {
+      background-image: linear-gradient(to top, #050801, #3b3f3e, #767a7b, #b9babb, #ffffff);
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .cont {
+      padding: 30px;
+      margin: 100px;
+      background: rgba(3, 252, 211, 0.1);
+      border-radius: 3px;
+      line-height: 50px;
+    }
+    a {
+      text-decoration: none;
+      color: rgb(3, 252, 211);
+    }
+    span {
+      padding-right: 200px;
+    }
+    .footer {
+      position: absolute;
+      bottom: 10%;
+      left: 49%;
+      color: rgb(3, 252, 211);
+      text-shadow: 0 0 0.1em white, 0 0 0.3em currentColor;
+      cursor: pointer;
+    }
+    .footer:hover::before {
+      pointer-events: none;
+      content: "";
+      position: absolute;
+      background: rgb(3, 252, 211);
+      top: 120%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+      filter: blur(1em);
+      opacity: 0.5;
+    }
+  </style>
+  <body>
+    <div class="cont">
+      <h2>Regulamin rekrutacji do ZSM nr 1 na rok szkolny 2022/2023[ 2022-02-06 ]</h2>
+      <span>Regulaminy rekrutacji do
+      Zespołu Szkół Mechanicznych nr 1Regulamin rekrutacji do Technikum Mechanicznego nr 15 -
+      <a href="Core/files/regulamin_dla_Tech.Mech.15.pdf" target="_blank">regulamin_dla_Tech.Mech.15.pdf</a></span>
+      <span>Regulamin rekrutacji do Branżowej Szkoły I stopnia nr 14 -
+      <a href="Core/files/regulamin_dla_SBI_14.pdf" target="_blank">regulamin_dla_SBI_14.pdf</a></span>
+    </div>
+    <a class="footer" href="index.html">Go back?</a>
+  </body>
+</html>
