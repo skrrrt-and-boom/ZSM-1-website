@@ -11,14 +11,14 @@ body {
   grid-template-columns: repeat(4, 1fr);
   padding-top: 30px;
   padding-left: 30px;
-  color: rgba(3, 252, 211,1);
+  color: rgba(73, 86, 120,1);
 }
 
 h2 {
   text-align: center;
   padding-right: 10px;
-  border-right: 3px dashed rgba(3, 252, 211, .5);
-  text-shadow: 0 0 0.1em white, 0 0 0.3em currentColor;
+  border-right: 3px dashed rgba(73, 86, 120, .5);
+  text-shadow: 0 0 0.1em rgb(218, 36, 27), 0 0 0.3em rgba(218, 36, 27, 0.1);
 }
 
 .blach {
@@ -29,8 +29,8 @@ h2 {
   position: absolute;
   bottom: 10%;
   left: 49%;
-  color: rgb(3, 252, 211);
-  text-shadow: 0 0 0.1em white, 0 0 0.3em currentColor;
+  color: rgb(73, 86, 120);
+  text-shadow: 0 0 0.1em rgb(218, 36, 27), 0 0 0.3em currentColor;
   cursor: pointer;
   text-decoration: none;
 }
@@ -38,7 +38,7 @@ h2 {
   pointer-events: none;
   content: "";
   position: absolute;
-  background: rgb(3, 252, 211);
+  background: rgb(73, 86, 120);
   top: 120%;
   left: 0;
   width: 100%;
